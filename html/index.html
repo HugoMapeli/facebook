@@ -9,8 +9,22 @@
   <title>Facebook – entre ou cadastre-se</title>
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+    .botao:hover{
+      background-color: #3b5998;
+    }
+    .botao{
+      color: white;
+       background-color: #4267B2; 
+       border-color: #34528D; 
+       border-style: solid;
+       width: 55px; 
+       height: 27px;
+       margin-top: 6.52%;
+    }
+  </style>
 </head>
-<nav style="background-color: #3B5998;height: 80px" >
+<nav style="background-image: linear-gradient( #4C68A1,#21438A);height: 80px" >
 
   <div class="container">
     <div class="row">
@@ -22,20 +36,34 @@
         <div class="form-row">
           <div class="col-5">
             <label for="email" style="color: white; font-size: 80%; margin-bottom: -3%; margin-top: 6%">Email ou telefone</label>
-            <input type="eamil" id="email" style="height: 24px">
+            <input type="eamil" id="email" style="height: 24px" autofocus="">
           </div>
         <div class="col-5">
             <label for="senha" style="color: white; font-size: 80%; margin-bottom: -3%; margin-top: 6%">Senha </label>
             <input type="password" id="senha" style="height: 24px">
             <a href="https://www.facebook.com/login/identify?ctx=recover&lwv=110&ars=royal_blue_bar" style="color: #819BBD"> <small id="senha">Esqueceu a conta?</small></a>
           </div>
-          <input aria-label="Entrar" type="submit">
+          <button class="botao"><a href="timeline.html" style="text-decoration: none;color: white; text-align:center;">Entrar</a></button>
         </div>
       </form>
     </div>
-  </div></div>
+  </div>
+</div>
 </div>
 </nav>
+<div class="container-fluid" style="background-image: linear-gradient(#FEFEFE, #D3D8E8)">
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+        <h5 style="padding-top: 45px">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h5>
+        <img src="../img/inicio.png">
+      </div>
+      <div class="col-4" style="margin-left: 18%; padding-top: 20px">
+        <h2>Abra sua conta</h2>
+      </div>
+    </div>
+  </div>
+</div>
 <body>
 
 

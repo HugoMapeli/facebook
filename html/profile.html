@@ -15,7 +15,7 @@
   href="../img/iconfacebook.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <style type="text/css">
-   .botoes{background-color: #F5F6F7;
+  .botoes{background-color: #F5F6F7;
     height: 90%;
     width:90%;
     margin-top: -90px;
@@ -23,42 +23,107 @@
     padding: 0px;
     border-radius: 0px;
     font-size: 12px;
-   }
-   }
-  </style>
+  }
+  .linha-vertical {
+    height: 30px;
+    border-left: 1px solid;
+    color: #F1F1F3;
+  }
+
+</style>
 </head>
 <body style="background-color: #E9EBEE">
   <div class="container-fluid">
     <div class="row">
       <div class="col-3"></div>
       <div class="col-6">
-        <div class="row"><img style="width: 90%; height: 325px" src="../img/CapaPCI.jpg"></div>
+        <div class="row"><img style="width: 90%; height: 280px" src="../img/CapaPCI.jpg"></div>
         <div class="row">
-          <img style="margin-top: -125px; padding-left: 25px" src="../img/eloperfil.jpg">
-          <h4 style="color: white; margin-top: -50px; padding-left: 12px">Drª Lolô Marques Seno</h4>
-          <div class="dropdown">
-            <a class=" btn dropdown-toggle botoes" href="#" role="button"  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span style="color: #705B67; "><i class="fas fa-check"></i> Amigos</span>
-            </a>
+          <div class="col-5">
+            <img style="margin-top: -125px; padding-left: 25px" src="../img/eloperfil.jpg">
+            <h4 style="color: white; margin-top: -70px; padding-left: 200px;">Drª Lolô Seno</h4></div>
+            <div class="col-2">
+              <div class="dropdown">
+                <a style="width: 60%; height: 30px" class=" btn dropdown-toggle botoes " href="#" role="button"  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span style="color: #705B67; " class="align-middle"><i class="fas fa-check "></i> Amigos</span>
+                </a>
 
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="font-size:12px ">
-              <a class="dropdown-item" href="#">Receber Notificações</a>
-              <hr>
-              <a class="dropdown-item" href="#">Melhores Notificações</a>
-              <a class="dropdown-item" href="#">Conhecidos</a>
-              <a class="dropdown-item" href="#">Adicionar a outra lista...</a>
-              <hr>
-              <a class="dropdown-item" href="#">Sugira amigos...</a>
-              <hr>
-              <a class="dropdown-item" href="#">Desfazer amizade</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="font-size:12px ">
+                  <a class="dropdown-item" href="#">Receber Notificações</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Melhores Notificações</a>
+                  <a class="dropdown-item" href="#">Conhecidos</a>
+                  <a class="dropdown-item" href="#">Adicionar a outra lista...</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Sugira amigos...</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Desfazer amizade</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <a style="width: 50%; height: 30px" class=" btn botoes" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <span style="color: #705B67; " class="align-middle"><i class="fas fa-rss"  " ></i> Seguir</span>
+              </a>
+            </div>
+            <div class="col-2">
+              <a style="width: 60%; margin-left: -65px; height: 30px" class=" btn botoes" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <span style="color: #705B67;" class="align-middle"><i class="fab fa-facebook-messenger"></i> Mensagem</span>
+              </a>
+            </div>
+            <div class="col-1">
+              <div class="dropdown">
+                <a style="width: 60px; height: 30px; margin-left: -147px" class=" btn dropdown-toggle botoes " href="#" role="button"  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span style="color: #705B67; " class="align-middle"><i class="fas fa-check "></i> ...</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="font-size:12px ">
+                  <a class="dropdown-item" href="#">Ver amizade</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Cutucar</a>
+                  <hr>
+                  <a class="dropdown-item" href="#">Dar feedback ou denunciar este perfil</a>
+                  <a class="dropdown-item" href="#">Bloquear</a>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row" style="background-color: white; margin-top: -23px; height: 40px; margin-right: 80px">
+          <div class="col-3"></div>
+          <div class="col-3 linha-vertical" style="margin-top: 9px; "><h5 style="color: #4B4F56">Linha do Tempo</h5></div>
+          <div class="col linha-vertical" style="margin-left: -4%;margin-top: 9px; "><h5 style="color: #365999">Sobre</h5></div>
+          <div class="col linha-vertical" style="margin-left: -8%;margin-top: 9px; "><h5 style="color: #365999">Amigos</h5></div>
+          <div class="col linha-vertical" style="margin-left: -8%;margin-top: 9px; "><h5 style="color: #365999">Fotos</h5></div>
+          <div class="col linha-vertical" style="margin-left: -8%;margin-top: 9px; "><h5 style="color: #365999">Mais</h5></div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="card" style="width: 18rem; margin-top: 15px ">
+              <div class="card-body">
+                <h5 class="card-title"><img src="../img/globo.png">Apresentação</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Vocês pensaram que eu não ia fazer meu teste de mesa hoje?</h6>
+                <hr>
+                <p class="card-text" style="font-size: 12px"><img src="../img/trabalho.png">Trabalha como professora no inferno do IFSP</p>
+                <p class="card-text" style="font-size: 12px"><img src="../img/trabalho.png">Trabalhou como striper em Karty Night Club</p>
+                <p class="card-text" style="font-size: 12px"><img src="../img/trabalho.png">Trabalhou como desenvolvedor de fanfics computacionas</p>
+                <p class="card-text" style="font-size: 12px"><img src="../img/formada.png">Formada pela vida</p>
+                <p class="card-text" style="font-size: 12px"><img src="../img/formada.png">Estudou em Harvard e em outras 45 universidades renomadas ao redor do mundo</p>
+                <p class="card-text" style="font-size: 12px"><img src="../img/mora.png">Mora em Manhatan, Las Vegas and Paris</p>
+                <p class="card-text" style="font-size: 12px"><img src="../img/casada.png">Casada com <a href="">Silsil Cheirosa</a></p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem; margin-top: 15px ">
+              <div class="card-body">
+                <h5 class="card-title"><img src="../img/iconefoto.png">Fotos</h5>
+              <img src="../img/elosilsil.jpg" style="width: 50%">
+              </div>
             </div>
           </div>
-          <a style="width: 10%" class=" btn botoes" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-            <span style="color: #705B67; "><i class="fas fa-rss"></i>  Seguir</span>
-          </a>
+          <div class="col-6">
+
+          </div>
         </div>
-        
-      </div>
+      </div> 
       <div class="col-3"></div>
     </div>
   </div>

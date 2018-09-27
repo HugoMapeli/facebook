@@ -34,6 +34,12 @@
     margin-right: 1.5%;
     height: 25px;
   }
+  .linha2{
+    border-left: 2px solid #F1F1F3;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    height: 25px;
+  }
   .linhadropdown{
     width:95%;
   }
@@ -50,20 +56,30 @@
     background-color:#4267B2;
     color:white;
   }
+
   .dropdown i{
     color: black;
   }
 .esquerda{
   font-family:Tahoma;
-  font-size: 13px;
+  font-size: 16px;
   margin-top: 1%;
 }
+
 .esquerda img{
   margin-right:1%;
   margin-top:1%;
 }
 .esquerda span{
-  margin-top:1%;
+  margin-top:-3%;
+}
+.esquerda button{
+ background-color:#E9EBEE;
+ padding:0;
+ margin-top:1%;
+}
+.esquerda button:hover{
+  background-color: #F5F6F7;
 }
 .esquerda h6{
   margin-left:-2%;
@@ -72,18 +88,25 @@
   font-weight: bold;
   margin-top:1%;
 }
-
+.principal span{
+  background-color: #F5F6F7;
+  border-radius:40%;
+}
+.principal{
+  font-family: sans-serif;
+  font-weight: bold;
+}
 </style>
 </head>
 <body>
   <nav style="background-color:#4267B2" class="navbar navbar-expand-lg">
     <div class="row">
-      <div class="col">
+      <div class="col-3">
       </div>
-      <div class="col">
+      <div class="col-5">
         <form class="form-inline">
-          <img style="height:25px; width:4%;margin-right: 10px;margin-top: 1%" src="../img/iconfacebookbranco.png">
-          <div style="height:25px;width: 70%; margin-top: 1%;" class="input-group">
+          <img style="height:25px; width:5%;margin-right: 10px;margin-top: 1%" src="../img/iconfacebookbranco.png">
+          <div style="height:25px;width: 80%; margin-top: 1%; margin-right:5%" class="input-group">
             <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="searchicon">
             <div class="input-group-append">
               <span class="input-group-text" id="searchicon"><i class="fas fa-search"></i></span>
@@ -154,7 +177,6 @@
               <hr class="m-0">
               <div class="row m-0">
                 <a style="padding-left:44%; font-weight: bold;" href="#">Ver Tudo</a>
-
               </div>
             </div>
           </div>
@@ -167,17 +189,28 @@
            </a>
            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <div class="row">
-              <h6 style="float:left;"> Ajuda rápida </h6>
-              <a href="#" style="float:right"> Central de ajuda</a>
+              <div class="col">
+              <h6> Ajuda rápida </h6>
+            </div>
+              <div class="col">
+              <a href="#"> Central de ajuda</a>
+            </div>
             </div>
             <form class="form-inline">
-              <input class="form-control" type="search" placeholder="Como podemos ajudar?" aria-describedby="searchicon">
-              <div class="input-group-append">
-                <span class="input-group-text" id="searchicon" style="font-size:5px"><i class="fas fa-search"></i></span>
-              </div>
-
+            <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="searchicon">
+            <div class="input-group-append">
+              <span class="input-group-text" id="searchicon"><i class="fas fa-search"></i></span>
+          </div>
             </form>
+              <h6 style="color:#8D949E; padding-top:2%">AJUDA COM ESTA PÁGINA</h6>
+              <a class="dropdown-item" href="#">Página Inicial</a>
+              <a class="dropdown-item" href="#">Linha do tempo</a>
 
+              <a class="dropdown-item" href="#">Bate-papo e mensagens</a>
+              <a class="dropdown-item" href="#">Segurança da conta</a>
+              <a class="dropdown-item" href="#">Privacidade</a>
+              <hr class="m-0" style="padding-bottom:2%; background-color:#f5f6f7">
+              <hr class="m-0">
 
           </div>
         </div>
@@ -203,38 +236,76 @@
       </div>
     </div>
   </div>
+
 </nav>
   
 <div class="container-fluid row " style="background-color: #E9EBEE">
   <div class="col-2">
   </div>
-  <div class="col-4 esquerda">
+  <div class="col-1 esquerda">
     <div class="row">
-    <img style="border-radius:50%; width:3%; height:60%" src="../img/eloize.jpg"><span>Dra. Lolô Seno</span>
-  </div>
-  <div class="row">
-    <img src="../img/feedicon.png"><span>Feed de Notícias </span>
-  </div>
-  <div class="row">
-    <img style="width:3%; height: 30%;" src="../img/messengericon.png"><span>Messenger</span>
-  </div>
-  <h6> Atalhos </h6>
-  <h6> Explorar </h6>
-  <div class="row">
-    <img src="../img/salvos.png"><span>Salvos</span>
-  </div>
+      <img style="border-radius:50%; width:15%; height:60%" src="../img/eloize.jpg"><span>Dra. Lolô Seno</span>
+    </div>
     <div class="row">
-    <img src="../img/grupos.png"><span>Grupos</span>
+      <img src="../img/feedicon.png" style="width:10%; height:30%"><span>Feed de Notícias </span>
+    </div>
+    <div class="row">
+      <img style="width:10%; height: 30%;" src="../img/messengericon.png"><span>Messenger</span>
+    </div>
+    <h6> Atalhos </h6>
+    <h6> Explorar </h6>
+    <div class="row">
+      <button class="btn"> <img src="../img/salvos.png">Salvos</button>
+    </div>
+    <div class="row">
+      <button class="btn"><img src="../img/grupos.png">Grupos</button>
+    </div>
+    <div class="row">
+      <button class="btn"><img src="../img/eventos.png">Eventos</button>  
+       </div>
+    <div class="row">
+      <button class="btn"><img src="../img/paginas.png">Páginas</button>
+    </div>
+    <div class="row">
+      <button class="btn"><img src="../img/amigos.png">Lista de amigos</button>
+    </div>
   </div>
-  <div class="row">
-    <img src="../img/eventos.png"><span>Eventos</span>
+  <div class="col-4 principal">
+    <form>
+      <div class="card mt-3" >
+        <div class="card-header">
+          <img src="../img/lapis.png">
+          <span style="font-weight: bold; color: gray">Criar Publicação</span>
+                    <span class="linha2"></span>
+          <img src="../img/album.png">
+          <span style="font-weight: bold; color: #3E6BA7">Álbum de fotos/vídeos</span>
+              <span class="linha2"></span>
+          <img src="../img/videoaovivo.png">
+          <span style="font-weight: bold; color: #3E6BA7">Vídeo ao vivo</span>
+        </div>
+
+        <div class="card-body">
+                  <img src="../img/eloperfil.jpg" style="border-radius:50%; width:10% ">
+          <input type="" name="algumacoisa" style=" height: 50px; width: 460px; border: none; " placeholder="No que você está pensando, Drª?">
+          <hr style="margin-top:2%">
+          <span>
+          <img src="../img/fotocolorida.png">
+            Foto/vídeo</span>
+          <span>
+          <img src="../img/amigos.png" style="padding-left: 25px">
+          Marcar amigos</span>
+          <span>
+          <img src="../img/feliz.png">
+          <span>Sentimento/atividade</span>
+          <span>...</span>
+        </div>
+  </form>
+  <div class="row container">
+
   </div>
-  <div class="row">
-    <img src="../img/paginas.png"><span>Páginas</span>
-</div>
-<div class="row">
-  <img src="../img/amigos.png"><span>Lista de amigos</span>
-</div>
+
+
+
  <script src="assets/js/vendor/jquery-slim.min.js"></script>
  <script src="assets/js/vendor/popper.min.js"></script>
  <script src="dist/js/bootstrap.min.js"></script>

@@ -61,27 +61,27 @@
     color: black;
   }
 
-.esquerda{
-  font-family:Tahoma;
-  font-size: 18px;
-  margin-top: 1%;
-}
-.esquerda img{
-  margin-right:1%;
-  margin-top:1%;
-}
-.esquerda span{
-  margin-top:-3%;
-}
-.esquerda button{
- background-color:#E9EBEE;
- padding:0;
- margin-top:2%;
- margin-bottom:2%;
+  .esquerda{
+    font-family:Tahoma;
+    font-size: 18px;
+    margin-top: 1%;
+  }
+  .esquerda img{
+    margin-right:1%;
+    margin-top:1%;
+  }
+  .esquerda span{
+    margin-top:-3%;
+  }
+  .esquerda button{
+   background-color:#E9EBEE;
+   padding:0;
+   margin-top:2%;
+   margin-bottom:2%;
    font-family:Tahoma;
    font-size: 18px;
-}
-.esquerda button:hover{
+ }
+ .esquerda button:hover{
   background-color: #F5F6F7;
 }
 .esquerda h6{
@@ -96,9 +96,9 @@
   background-color: #E9EBEE;
 }
 .evento button{
-   background-color: white; 
-   padding:0;
-   width: 100%;
+ background-color: white; 
+ padding:0;
+ width: 100%;
 }
 .publicar span{
   background-color: #F5F6F7;
@@ -147,476 +147,702 @@
         <div class="row">
           <img style="border-radius:50%; width:6%; height:3%" src="../img/eloize.jpg">
 
-          <span class="branco"  data-toggle="tooltip" data-placement="bottom" title="Perfil">Lolô</span>
+          <a href="profile.html"><span class="branco"  data-toggle="tooltip" data-placement="bottom" title="Perfil">Lolô</span></a>
 
           <span class="linha"></span>
-          <span class="branco">Página Inicial </span>
+          <a href="timeline.html" style="text-decoration: none"><span class="branco">Página Inicial </span></a>
           <span class="linha"></span>
           <span class="branco">Criar </span>
 
           <span class="linha"></span>
 
+          <div class="dropdown"> 
+            <a class="nav-link dropdown py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i style="font-size: 120%" class="fas fa-user-friends"></i>
+            </a>
+            <div class="dropdown-menu" style="width:460px;" aria-labelledby="navbarDropdown">
+              <div>
+                <div class="row">
+                  <div class="col-4.1" style="margin-left: 3%"><h6>Solicitações de amizade</h6></div>
+                  <div class="col" style="margin-left: 25%">
+                    <a href="#" style="float-right">Encontrar amigos . </a> <a href="#" style="float-right"> Configurações</a>
+                  </div> 
+                </div>
+                
+                <div class="row">
+                  <div class="col-5">
+                    <img style="border-radius:50%;width:40%;height:90%;" src="../img/alex.jpg">
+                  </div>
+                  <div class="col-7">
+                    <div class="row">
+                      <a href="#" style="text-decoration: none; font-weight: bold; margin-left: -40%">Alex Virgílio</a>
+                    </div>
+                    <div class="row">
+                      <p style="margin-left: -40%">15 amigos em comum</p>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <button style="background-color: #4267B2; color: white; font-weight: bold;margin-left: -100%; margin-top: -10%">Confirmar</button>
+                      </div>
+                      <div class="col">
+                        <button style="background-color: #F5F6F7; color: black; font-weight: bold; margin-left: -150%; margin-top: -10">Excluir</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-          <i class="fas fa-user-friends"></i>
+                <div class="row" style="margin-top: 3%">
+                  <div class="col-5">
+                    <img style="border-radius:50%;width:40%;height:90%;" src="../img/marcelo.jpg">
+                  </div>
+                  <div class="col-7">
+                    <div class="row">
+                      <a href="#" style="text-decoration: none; font-weight: bold; margin-left: -40%">Marcelinho Domingues</a>
+                    </div>
+                    <div class="row">
+                      <p style="margin-left: -40%">182 amigos em comum</p>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <button style="background-color: #4267B2; color: white; font-weight: bold;margin-left: -100%; margin-top: -10%">Confirmar</button>
+                      </div>
+                      <div class="col">
+                        <button style="background-color: #F5F6F7; color: black; font-weight: bold; margin-left: -150%; margin-top: -10%">Excluir</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row" style="margin-top: 3%">
+                <div class="col-5">
+                  <img style="border-radius:50%;width:40%;height:90%;" src="../img/fabio.jpg">
+                </div>
+                <div class="col-7">
+                  <div class="row">
+                    <a href="#" style="text-decoration: none; font-weight: bold; margin-left: -40%">Fábio Mizuno</a>
+                  </div>
+                  <div class="row">
+                    <p style="margin-left: -40%">12 amigos em comum</p>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button style="background-color: #4267B2; color: white; font-weight: bold;margin-left: -100%; margin-top: -10%">Confirmar</button>
+                    </div>
+                    <div class="col">
+                      <button style="background-color: #F5F6F7; color: black; font-weight: bold; margin-left: -150%; margin-top: -10%">Excluir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <i class="fab fa-facebook-messenger"></i>
+              <div class="row" style="margin-top: 3%">
+                <div class="col-5">
+                  <img style="border-radius:50%;width:40%;height:90%;" src="../img/pedro.jpg">
+                </div>
+                <div class="col-7">
+                  <div class="row">
+                    <a href="#" style="text-decoration: none; font-weight: bold; margin-left: -40%">Pedro Northon Nobile</a>
+                  </div>
+                  <div class="row">
+                    <p style="margin-left: -40%">85 amigos em comum</p>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button style="background-color: #4267B2; color: white; font-weight: bold;margin-left: -100%; margin-top: -10%">Confirmar</button>
+                    </div>
+                    <div class="col">
+                      <button style="background-color: #F5F6F7; color: black; font-weight: bold; margin-left: -150%; margin-top: -10%">Excluir</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
 
           <div class=" dropdown" >
-            <a class="nav-link dropdown py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-bell"></i>
+            <a class="nav-link dropdown py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: -30%">
+              <i style="font-size: 120%" class="fab fa-facebook-messenger"></i>
             </a>
             <div class="dropdown-menu" style="width:460px;" aria-labelledby="navbarDropdown">
               <div class="row">
-                <div class="col">
-                  <h6 style="float-left"> Notificações</h6>
+                <div class="col-1">
+                  <h6 style="float-left"> Recentes</h6>
+                  
                 </div>
-                <div class="col">
-                  <a href="#" style="float-right"> Marcar todas como lidas </a> <a href="#" style="float-right"> Configurações</a>
+                <div class="col-6">
+                  <h6 style="float-left; margin-left: 7%; color: gray"> Solicitações de mensagem</h6>
                 </div>
-              </div>
-              <div class="row m-0 bg-light">
+                
                 <div class="col">
-                  <font color="gray"> NOVAS </font>
-                </div>
-              </div>
-              <div class="row m-0" style="background-color: #EDF2FA">
-                <img style="border-radius:50%;width:12%;height:12%;" src="../img/silvana.jpg">
-                <p style="padding-top:3%"> <b> Silsil Cheirosa </b> marcou você em uma foto. </p>
-              </div>
-              <div class="row m-0 bg-light">
-                <div class="col">
-                  <font color="gray"> ANTERIORES </font>
+                  <a href="#" style="float-right"> Novo grupo . </a> <a href="#" style="float-right"> Nova mensagem</a>
                 </div>
               </div>
-              <div class="row m-0 pt-2 pb-2">
-                <img style="border-radius:50%;width:12%;height:12%;" src="../img/silvana.jpg">
-                <p style="padding-top:3%"> <b> Silsil Cheirosa </b> mencionou você em um comentário. </p>
-              </div>
-              <hr class="m-0">
-              <div class="row m-0 pt-2 pb-2">
-                <img style="border-radius:50%;width:12%;height:12%;" src="../img/silvana.jpg">
-                <p style="padding-top:3%"> <b> Silsil Cheirosa </b> mencionou você em um comentário. </p>
-              </div>
-              <hr class="m-0">
-              <div class="row m-0 pt-2 pb-2">
-                <img style="border-radius:50%;width:12%;height:12%;" src="../img/nicolas.jpg">
-                <p style="padding-top:3%; padding-right:1%"> <b> Nicolas Bianconi </b> comentou sobre o status que voccê compartilhou. </p>
-              </div>
-              <hr class="m-0" style="padding-bottom:0.8%">
-              <hr class="m-0">
+              
               <div class="row m-0">
-                <a style="padding-left:44%; font-weight: bold;" href="#">Ver Tudo</a>
+                <img style="border-radius:50%;width:12%;height:12%;" src="../img/nicolas.jpg">
+                <p style="padding-top:3%"> <b> Nicolas Bianconi </b>
+                  <div class="row">
+                    <i  style="color: green; font-size: 90%; margin-left: 160%;margin-top: 100%" class="fas fa-circle"></i>
+                  </div>  </p>
+                  <div class="row" style="margin-top: 6%; margin-left: -11%">
+                    Vote BOLSOMITO!!
+                  </div>
+                </div>
+                <hr>
+                <div class="row m-0">
+                  <img style="border-radius:50%;width:12%;height:12%;" src="../img/silvana.jpg">
+                  <p style="padding-top:3%"> <b> Silsil Cheirosa </b>
+                    <div class="row">
+                      <i  style="color: green; font-size: 90%; margin-left: 160%;margin-top: 100%" class="fas fa-circle"></i>
+                    </div>  </p>
+                    <div class="row" style="margin-top: 6%; margin-left: -11%">
+                      Vamos falar mal dos nossos queridos alunos.
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row m-0">
+                    <img style="border-radius:50%;width:12%;height:12%;" src="../img/carlos.jpg">
+                    <p style="padding-top:3%"> <b>Carlão Guimarães </b>
+                    </p>
+                    <div class="row" style="margin-top: 6%; margin-left: -11%">
+                      <p style="margin-left: -12%">Eloize, já colocou as notas no sistema?</p>
+                    </div>
+                  </div>
+
+                  <div class="row">               
+                    <div class="col">
+                      <a href="#" style="float-left;"> Ver tudo no messenger</a> 
+                      <a href="#" style="float-right; margin-left: 70%;"> Marcar todas como lidas</a>
+                    </div>
+                  </div> 
+                </div>
               </div>
+
+              <div class=" dropdown" style="margin-left: -3%" >
+                <a class="nav-link dropdown py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: -30%">
+                  <i style="font-size: 120%"  class="fas fa-bell"></i>
+                </a>
+                <div class="dropdown-menu" style="width:460px;" aria-labelledby="navbarDropdown">
+                  <div class="row">
+                    <div class="col">
+                      <h6 style="float-left"> Notificações</h6>
+                    </div>
+                    <div class="col">
+                      <a href="#" style="float-right"> Marcar todas como lidas </a> <a href="#" style="float-right"> Configurações</a>
+                    </div>
+                  </div>
+                  <div class="row m-0 bg-light">
+                    <div class="col">
+                      <font color="gray"> NOVAS </font>
+                    </div>
+                  </div>
+                  <div class="row m-0" style="background-color: #EDF2FA">
+                    <img style="border-radius:50%;width:12%;height:12%;" src="../img/silvana.jpg">
+                    <p style="padding-top:3%"> <b> Silsil Cheirosa </b> marcou você em uma foto. </p>
+                  </div>
+                  <div class="row m-0 bg-light">
+                    <div class="col">
+                      <font color="gray"> ANTERIORES </font>
+                    </div>
+                  </div>
+                  <div class="row m-0 pt-2 pb-2">
+                    <img style="border-radius:50%;width:12%;height:12%;" src="../img/silvana.jpg">
+                    <p style="padding-top:3%"> <b> Silsil Cheirosa </b> mencionou você em um comentário. </p>
+                  </div>
+                  <hr class="m-0">
+                  <div class="row m-0 pt-2 pb-2">
+                    <img style="border-radius:50%;width:12%;height:12%;" src="../img/silvana.jpg">
+                    <p style="padding-top:3%"> <b> Silsil Cheirosa </b> mencionou você em um comentário. </p>
+                  </div>
+                  <hr class="m-0">
+                  <div class="row m-0 pt-2 pb-2">
+                    <img style="border-radius:50%;width:12%;height:12%;" src="../img/nicolas.jpg">
+                    <p style="padding-top:3%; padding-right:1%"> <b> Nicolas Bianconi </b> comentou sobre o status que voccê compartilhou. </p>
+                  </div>
+                  <hr class="m-0" style="padding-bottom:0.8%">
+                  <hr class="m-0">
+                  <div class="row m-0">
+                    <a style="padding-left:44%; font-weight: bold;" href="#">Ver Tudo</a>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <span class="linha"></span>
+
+              <div class="dropdown">
+                <a class="nav-link dropdown py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: -30%">
+                 <i style="font-size: 120%" class="fas fa-question-circle"></i>
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="row">
+                  <div class="col">
+                    <h6> Ajuda rápida </h6>
+                  </div>
+                  <div class="col">
+                    <a href="#"> Central de ajuda</a>
+                  </div>
+                </div>
+                <form class="form-inline">
+                  <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="searchicon">
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="searchicon" style="margin-top: -80%; margin-left: 335%"><i class="fas fa-search"></i></span>
+                  </div>
+                </form>
+                <h6 style="color:#8D949E; padding-top:2%">AJUDA COM ESTA PÁGINA</h6>
+                <a class="dropdown-item" href="#">Página Inicial</a>
+                <a class="dropdown-item" href="#">Linha do tempo</a>
+
+                <a class="dropdown-item" href="#">Bate-papo e mensagens</a>
+                <a class="dropdown-item" href="#">Segurança da conta</a>
+                <a class="dropdown-item" href="#">Privacidade</a>
+                <hr class="m-0" style="padding-bottom:2%; background-color:#f5f6f7">
+                <hr class="m-0">
+                <a class="dropdown-item" href="#"><i style="font-size: 100%" class="fas fa-lock"></i>Verificação de Privacidade</a>
+                <hr class="m-0">
+                <a class="dropdown-item" href="#"><i style="font-size: 100%" class="fas fa-cog"></i>Atalhos de privacidade</a>
+                <hr class="m-0" style="padding-bottom:2%; background-color:#f5f6f7">
+                <hr class="m-0">
+                <a class="dropdown-item" href="#"><i style="font-size: 100%" class="fas fa-envelope"></i>Caixa de entrada de suporte</a>
+                <hr class="m-0">
+                <a class="dropdown-item" href="#"><i style="font-size: 100%" class="fas fa-exclamation-triangle"></i>Relatar um problema</a>
+              </div>
+            </div>
+
+            <div class=" dropdown">
+              <a class="nav-link dropdown py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i  class="fas fa-sort-down" ></i>
+             </a>
+             <div class="dropdown-menu seta" aria-labelledby="navbarDropdown">
+              <p class="my-2" style="color: gray; margin-left:5%"> Suas Páginas </p>
+              <hr class="linhadropdown">
+              <a class="dropdown-item" href="#">Gerenciar Páginas</a>
+              <hr class="linhadropdown">
+              <a class="dropdown-item" href="#">Novos Grupos</a>
+              <hr class="linhadropdown">
+              <a class="dropdown-item" href="#">Publicidade no Facebook</a>
+              <hr class="linhadropdown">
+              <a class="dropdown-item" href="#">Registro de Atividades</a>
+              <a class="dropdown-item" href="#">Preferências do Feed de Notícias</a>
+              <a class="dropdown-item" href="#">Configurações</a>
+              <a class="dropdown-item" href="index.html">Sair</a>
             </div>
           </div>
+        </div>
+      </div>
 
-          <span class="linha"></span>
+    </nav>
 
-          <div class="dropdown">
-            <a class="nav-link dropdown py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             <i class="fas fa-question-circle"></i>
-           </a>
-           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <div class="row">
-              <div class="col">
-                <h6> Ajuda rápida </h6>
-              </div>
-              <div class="col">
-                <a href="#"> Central de ajuda</a>
-              </div>
+    <div class="container-fluid row" style="background-color: #E9EBEE;">
+      <div class="col-1">
+      </div>
+      <div class="col-2 esquerda">
+        <div class="row" style="margin-left:32%">
+          <a href="profile.html"><button class="btn"><img style="border-radius:50%; width:20%; height:70%;" src="../img/eloize.jpg"><span>Dra. Lolô Seno</span></button></a>
+        </div>
+        <div class="row" style="margin-left:39%;">
+          <a href="timeline.html"><button class="btn" style="width: 170px"><img src="../img/feedicon.png" style="width:15%;"><span>Feed de Notícias </span></button></a>
+        </div>
+        <div class="row" style="margin-left:18%">
+          <button class="btn"><img style="width:12%;height: 60%;margin-right:2%"" src="../img/messengericon.png"><span>Messenger</span></button>
+        </div>
+        <div style="margin-left:45%;">
+          <h6> Atalhos </h6>
+          <div class="row">
+            <button class="btn"> <img src="../img/grupofofca.png">Fofocas do Ifsp</button>
+          </div>
+          <div class="row">
+            <a href="#"><i class="fas fa-sort-down" style="color: gray;"></i> <span class="ml-2" style="color:#3E6BA7 "> Ver mais</span>
+            </a>
+          </div>
+          <h6> Explorar </h6>
+          <div class="row">
+            <button class="btn"> <img src="../img/salvos.png">Salvos</button>
+          </div>
+          <div class="row">
+            <button class="btn"><img src="../img/grupos.png">Grupos</button>
+          </div>
+          <div class="row">
+            <button class="btn"><img src="../img/eventos.png">Eventos</button>  
+          </div>
+          <div class="row">
+            <button class="btn"><img src="../img/paginas.png">Páginas</button>
+          </div>
+          <div class="row">
+            <button class="btn"><img src="../img/amigos.png">Lista de amigos</button>
+          </div>
+          <div class="row">
+            <a href="#"><i class="fas fa-sort-down" style="color: gray;"></i> <span class="ml-2" style="color:#3E6BA7 "> Ver mais</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 principal">
+        <form>
+          <div class="card mt-3 publicar" >
+            <div class="card-header">
+              <img src="../img/lapis.png">
+              <span style="font-weight: bold; color: gray">Criar Publicação</span>
+              <span class="linha2"></span>
+              <img src="../img/album.png">
+              <span style="font-weight: bold; color: #3E6BA7">Álbum de fotos/vídeos</span>
+              <span class="linha2"></span>
+              <img src="../img/videoaovivo.png">
+              <span style="font-weight: bold; color: #3E6BA7">Vídeo ao vivo</span>
             </div>
-            <form class="form-inline">
-              <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="searchicon">
-              <div class="input-group-append">
-                <span class="input-group-text" id="searchicon"><i class="fas fa-search"></i></span>
+
+            <div class="card-body">
+              <img src="../img/eloperfil.jpg" style="border-radius:50%; width:10% ">
+              <input type="" name="algumacoisa" style=" height: 50px; width: 460px; border: none;font-size: 17px; " placeholder="No que você está pensando, Drª?">
+              <hr style="margin-top:2%">
+              <span>
+                <img src="../img/fotocolorida.png">
+              Foto/vídeo</span>
+              <span>
+                <img src="../img/amigos.png" style="padding-left: 25px">
+              Marcar amigos</span>
+              <span>
+                <img src="../img/feliz.png">
+                <span>Sentimento/atividade</span>
+                <span>...</span>
               </div>
             </form>
-            <h6 style="color:#8D949E; padding-top:2%">AJUDA COM ESTA PÁGINA</h6>
-            <a class="dropdown-item" href="#">Página Inicial</a>
-            <a class="dropdown-item" href="#">Linha do tempo</a>
+          </div>
 
-            <a class="dropdown-item" href="#">Bate-papo e mensagens</a>
-            <a class="dropdown-item" href="#">Segurança da conta</a>
-            <a class="dropdown-item" href="#">Privacidade</a>
-            <hr class="m-0" style="padding-bottom:2%; background-color:#f5f6f7">
-            <hr class="m-0">
+          <div class="row container mb-4" style="width:105%">
+            <div class="card" style="margin-top:15px;">
+              <div class="row">
+                <div class="col-3">
+                  <img src="../img/silvana.jpg" style="border-radius:70%; width:50%; margin-left: 8%;margin-top: 8% ">
+                </div>
+                <div class="col-9" style="margin-left: -7%; margin-top: 2%">
+                  <div class="row">
+                    <a href="#" style="text-decoration: none"><span style="font-weight: bold">Silsil Cheirosa</span></a>
+                  </div>
+                  <div class="row">
+                    <span style="font-size: 80%; color: gray">28 de setembro de 2018</span>
+                    <img src="../img/amig.png" style="padding-left: 1%">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+               <img src="../img/elosilsil.jpg" style="width: 90%; margin-left: 5%; height: 90%; padding-top:2%; padding-bottom:2%">
+             </div>
+             <div class="row">
+              <div class="col-2">
+                <img src="../img/smile.png" style="margin-left: 25%; width: 60%; height: 70%;">
+              </div>
+              <div class="col-10" style="margin-left: -6%;">
+                <span style="font-size: 90%; color: gray">Você e outros 15</span>
+              </div>
+              <hr>
+              <div class="row" style="margin-top: 1%; padding-top:2%">
+                <div class="col-2" style="margin-left: 20%">
+                  <img src="../img/likeazul.png" style="margin-left: 100%; float: right">
+                  <div class="row" style="margin-top: -1%; margin-left: 120%">
+                    <a href="#" style="text-decoration:none; color: #3578E5; font-weight: bold; float: left;">Curtiu</a>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <img src="../img/comentar.png" style="margin-left: 100%; float: right">
+                  <div class="row" style="margin-top: -1%; margin-left: 120%">
+                    <a href="#" style="text-decoration: none; color: gray; font-weight: bold; float: left">Comentar</a>
+                  </div>
 
+                </div>
+                <div class="col-6" >
+                  <div class="row" style="margin-left: 255%; margin-top: -17%">
+                    <img src="../img/share.png">
+                  </div>
+                  <div class="row" style="margin-left: 280%;margin-top: -17%">
+                    <a href="#" style="text-decoration: none; color: gray; font-weight: bold; float: left;">Compartilhar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class=" dropdown">
-          <a class="nav-link dropdown py-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           <i  class="fas fa-sort-down" ></i>
-         </a>
-         <div class="dropdown-menu seta" aria-labelledby="navbarDropdown">
-          <p class="my-2" style="color: gray; margin-left:5%"> Suas Páginas </p>
-          <hr class="linhadropdown">
-          <a class="dropdown-item" href="#">Gerenciar Páginas</a>
-          <hr class="linhadropdown">
-          <a class="dropdown-item" href="#">Novos Grupos</a>
-          <hr class="linhadropdown">
-          <a class="dropdown-item" href="#">Publicidade no Facebook</a>
-          <hr class="linhadropdown">
-          <a class="dropdown-item" href="#">Registro de Atividades</a>
-          <a class="dropdown-item" href="#">Preferências do Feed de Notícias</a>
-          <a class="dropdown-item" href="#">Configurações</a>
-          <a class="dropdown-item" href="index.html">Sair</a>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="row container mb-5" style="width:105%">
+          <div class="card">
+            <div class="row">
+              <div class="col-3">
+                <img src="../img/nicolas.jpg" style="border-radius:70%; width:50%; margin-left: 8%;margin-top: 8% ">
+              </div>
+              <div class="col-9" style="margin-left: -7%; margin-top: 2%">
+                <div class="row">
+                  <a href="#" style="text-decoration: none"><span style="font-weight: bold">Nicolas Bianconi</span></a>
+                </div>
+                <div class="row">
+                  <span style="font-size: 80%; color: gray">27 de setembro de 2018</span>
+                  <img src="../img/amig.png" style="padding-left: 1%">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+             <img src="../img/nicolas2.jpg" style="width: 90%; margin-left: 5%; height: 90%; padding-top:2%; padding-bottom:2%">
+           </div>
+           <div class="row">
+            <div class="col-2">
+              <img src="../img/smile.png" style="margin-left: 25%; width: 60%; height: 70%;">
+            </div>
+            <div class="col-10" style="margin-left: -6%;">
+              <span style="font-size: 90%; color: gray">Você e Hugo Mapeli</span>
+            </div>
+            <hr>
+            <div class="row" style="margin-top: 1%; padding-top:2%">
+              <div class="col-2" style="margin-left: 20%">
+                <img src="../img/likeazul.png" style="margin-left: 100%; float: right">
+                <div class="row" style="margin-top: -1%; margin-left: 120%">
+                  <a href="#" style="text-decoration:none; color: #3578E5; font-weight: bold; float: left;">Curtiu</a>
+                </div>
+              </div>
+              <div class="col-4">
+                <img src="../img/comentar.png" style="margin-left: 100%; float: right">
+                <div class="row" style="margin-top: -1%; margin-left: 120%">
+                  <a href="#" style="text-decoration: none; color: gray; font-weight: bold; float: left">Comentar</a>
+                </div>
 
-</nav>
-
-<div class="container-fluid row" style="background-color: #E9EBEE;">
-  <div class="col-1">
-  </div>
-  <div class="col-2 esquerda">
-    <div class="row">
-      <a href="profile.html"><button class="btn"><img style="border-radius:50%; width:20%; height:70%; margin-left:50%" src="../img/eloize.jpg"><span>Dra. Lolô Seno</span></button></a>
-    </div>
-    <div class="row">
-      <button class="btn"><img src="../img/feedicon.png" style="width:20%;margin-left:90%; height:70%"><span>Feed de Notícias </span></button>
-    </div>
-    <div class="row">
-      <button class="btn" style="margin-left:20%"><img style="width:12%;height: 60%;" src="../img/messengericon.png"><span>Messenger</span></button>
-    </div>
-    <div style="margin-left:45%;">
-      <h6> Atalhos </h6>
-      <div class="row">
-        <button class="btn"> <img src="../img/grupofofca.png">Fofocas do Ifsp</button>
-      </div>
-      <div class="row">
-        <a href="#"><i class="fas fa-sort-down" style="color: gray;"></i> <span class="ml-2" style="color:#3E6BA7 "> Ver mais</span>
-        </a>
-      </div>
-      <h6> Explorar </h6>
-      <div class="row">
-        <button class="btn"> <img src="../img/salvos.png">Salvos</button>
-      </div>
-      <div class="row">
-        <button class="btn"><img src="../img/grupos.png">Grupos</button>
-      </div>
-      <div class="row">
-        <button class="btn"><img src="../img/eventos.png">Eventos</button>  
-      </div>
-      <div class="row">
-        <button class="btn"><img src="../img/paginas.png">Páginas</button>
-      </div>
-      <div class="row">
-        <button class="btn"><img src="../img/amigos.png">Lista de amigos</button>
-      </div>
-      <div class="row">
-        <a href="#"><i class="fas fa-sort-down" style="color: gray;"></i> <span class="ml-2" style="color:#3E6BA7 "> Ver mais</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="col-4 principal">
-    <form>
-      <div class="card mt-3 publicar" >
-        <div class="card-header">
-          <img src="../img/lapis.png">
-          <span style="font-weight: bold; color: gray">Criar Publicação</span>
-          <span class="linha2"></span>
-          <img src="../img/album.png">
-          <span style="font-weight: bold; color: #3E6BA7">Álbum de fotos/vídeos</span>
-          <span class="linha2"></span>
-          <img src="../img/videoaovivo.png">
-          <span style="font-weight: bold; color: #3E6BA7">Vídeo ao vivo</span>
-        </div>
-
-        <div class="card-body">
-          <img src="../img/eloperfil.jpg" style="border-radius:50%; width:10% ">
-          <input type="" name="algumacoisa" style=" height: 50px; width: 460px; border: none;font-size: 17px; " placeholder="No que você está pensando, Drª?">
-          <hr style="margin-top:2%">
-          <span>
-            <img src="../img/fotocolorida.png">
-          Foto/vídeo</span>
-          <span>
-            <img src="../img/amigos.png" style="padding-left: 25px">
-          Marcar amigos</span>
-          <span>
-            <img src="../img/feliz.png">
-            <span>Sentimento/atividade</span>
-            <span>...</span>
+              </div>
+              <div class="col-6" >
+                <div class="row" style="margin-left: 255%; margin-top: -17%">
+                  <img src="../img/share.png">
+                </div>
+                <div class="row" style="margin-left: 280%;margin-top: -17%">
+                  <a href="#" style="text-decoration: none; color: gray; font-weight: bold; float: left;">Compartilhar</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </form>
+        </div>
       </div>
+    </div>
 
-      <div class="row container mb-5" style="width:105%">
-        <div class="card" style="margin-top:15px;">
+
+
+
+    <div class="col-3">
+      <div class=" pt-3 container row">
+        <div class="card" style="width: 375px;padding:3%">
           <div class="row">
             <div class="col-3">
-              <img src="../img/nicolas.jpg" style="border-radius:70%; width:50%; margin-left: 8%;margin-top: 8% ">
-            </div>
-            <div class="col-9" style="margin-left: -7%; margin-top: 2%">
-              <div class="row">
-                <a href="#" style="text-decoration: none"><span style="font-weight: bold">Nicolas Bianconi</span></a>
-              </div>
-              <div class="row">
-                <span style="font-size: 80%; color: gray">20 de setembro de 2018</span>
-                <img src="../img/amig.png" style="padding-left: 1%">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-           <img src="../img/nicolas2.jpg" style="width: 90%; margin-left: 5%; height: 90%; padding-top:2%; padding-bottom:2%">
-         </div>
-         <div class="row">
-          <div class="col-2">
-            <img src="../img/smile.png" style="margin-left: 25%; width: 60%; height: 70%;">
-          </div>
-          <div class="col-10" style="margin-left: -6%;">
-            <span style="font-size: 90%; color: gray">Você e Hugo Mapeli</span>
-          </div>
-          <hr>
-          <div class="row" style="margin-top: 1%; padding-top:2%">
-            <div class="col-2" style="margin-left: 20%">
-              <img src="../img/likeazul.png" style="margin-left: 100%; float: right">
-              <div class="row" style="margin-top: -1%; margin-left: 120%">
-                <a href="#" style="text-decoration:none; color: #3578E5; font-weight: bold; float: left;">Curtiu</a>
-              </div>
-            </div>
-            <div class="col-4">
-              <img src="../img/comentar.png" style="margin-left: 100%; float: right">
-              <div class="row" style="margin-top: -1%; margin-left: 120%">
-                <a href="#" style="text-decoration: none; color: gray; font-weight: bold; float: left">Comentar</a>
-              </div>
-
-            </div>
-            <div class="col-6" >
-              <div class="row" style="margin-left: 255%; margin-top: -17%">
-                <img src="../img/share.png">
-              </div>
-              <div class="row" style="margin-left: 280%;margin-top: -17%">
-                <a href="#" style="text-decoration: none; color: gray; font-weight: bold; float: left;">Compartilhar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-3">
-    <div class=" pt-3 container row">
-      <div class="card" style="width: 375px;padding:3%">
-        <div class="row">
-          <div class="col-3">
-            <a href="" style="color:#1d2129;; font-weight:bold; font-family: Helvetica;" data-toggle="tooltip" data-placement="bottom" title="Stories são fotos e vídeos que ficam visíveis por 24 horas.
-            Quando alguém adicionar a um story, ele aparecerá aqui.">
-            Stories
-          </a>
-        </div>
-        <div class="col">
-          <img src="../img/itensarq.png">
-          <a style="color:#3E6BA7" href="#">Itens arquivados</a> ·
-          <a style="color:#3E6BA7" href="#">Configurações</a>
-        </div>
-      </div>
-      <div class="row pt-3">
-        <div class="col-2">
-          <img src="../img/story.png">
-        </div>
-        <div class="col pl-4">
-          <a href="#" style="color:#3E6BA7;"><h6> Adicione ao seu story </h6> </a>
-          <p style="margin-top:-2%; color: gray"> Compartilhe uma foto, vídeo ou escreva algo </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-2">
-          <img src="../img/silvana.jpg" style="border-radius:50%; width:190%">
-        </div>
-        <div class="col pl-4">
-          <a href="#" style="color:#3E6BA7;"><h6> Silsil Cheirosa </h6> </a>
-          <p style="margin-top:-2%; color: gray"> Há 2 minutos </p>
-        </div>
-      </div>
-      <div class="row pt-3">
-        <div class="col-2">
-          <img src="../img/carlos.jpg" style="border-radius:50%; width:180%">
-        </div>
-        <div class="col pl-4">
-          <a href="#" style="color:#3E6BA7;"><h6> Carlão Guimarães </h6> </a>
-          <p style="margin-top:-2%; color: gray"> Há 6 horas </p>
-        </div>
-      </div>
-      <div class="row pt-3">
-        <div class="col-2">
-          <img src="../img/aline.jpg" style="border-radius:50%; width:175%">
-        </div>
-        <div class="col pl-4">
-          <a href="#" style="color:#3E6BA7;"><h6> Aline Franceschini</h6> </a>
-          <p style="margin-top:-2%; color: gray"> Há 10 horas </p>
-        </div>
-      </div>
-      <div class="row pt-1 pl-3">
-        <a href="#"><i class="fas fa-sort-down" style="color: gray;"></i> <span class="ml-2" style="color:#3E6BA7 "> Ver mais</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="mt-3 card evento" style="width: 375px;padding:3%">
-      <div class="row">
-        <div class="col-1">
-          <img src="../img/evento.png"> 
-        </div>
-        <div class="col">
-          <button class="btn pr-5"> <span style="color:#3E6BA7; padding-right:3%"> Festão do pagode </span> 
-
-            <span style="color:gray"> em 3 de outubro </span></button>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-3 card" style="width:375px; padding:1%">
-        <div class="row">
-          <div class="col-9">
-            <h6 style="color:gray; font-weight:bold; font-family: Helvetica; padding:1.6%"> Pessoas que você talvez conheça</h6>
+              <a href="" style="color:#1d2129;; font-weight:bold; font-family: Helvetica;" data-toggle="tooltip" data-placement="bottom" title="Stories são fotos e vídeos que ficam visíveis por 24 horas.
+              Quando alguém adicionar a um story, ele aparecerá aqui.">
+              Stories
+            </a>
           </div>
           <div class="col">
-            <a href="#">Ver todos</a>
+            <img src="../img/itensarq.png">
+            <a style="color:#3E6BA7" href="#">Itens arquivados</a> ·
+            <a style="color:#3E6BA7" href="#">Configurações</a>
           </div>
         </div>
-        <div class="row pt-1">
+        <div class="row pt-3">
           <div class="col-2">
-            <img src="../img/malu.jpg" style="border-radius:50%; width:180%">
+            <img src="../img/story.png">
           </div>
           <div class="col pl-4">
-            <a href="#" style="color:#3E6BA7;"><h6> Malu </h6> </a>
-            <p style="color: gray; margin-top: -2%"> 10 amigos em comum </p>
-            <div class="row" style="margin-top: -4%">
-              <button style=" width:65%; margin-left:5%"><img src="../img/addamigo.png" style="width:12%"> Adicionar aos amigos</button>
-            </div>
-          </div>
-
-          <div class="row pt-2">
-            <div class="col-2 ml-3">
-              <img src="../img/fabiana.jpg" style="border-radius:50%; width:160%">
-            </div>
-            <div class="col pl-4">
-              <a href="#" style="color:#3E6BA7;"><h6> Fabiana Deusa </h6> </a>
-              <p style="color: gray; margin-top: -2%"> 15 amigos em comum </p>
-              <div class="row" style="margin-top: -4%">
-                <button style=" width:65%; margin-left:5%"><img src="../img/addamigo.png" style="width:12%"> Adicionar aos amigos</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="row pt-2">
-            <div class="col-2 ml-3">
-              <img src="../img/lula.jpg" style="border-radius:50%; width:160%">
-            </div>
-            <div class="col pl-4">
-              <a href="#" style="color:#3E6BA7;"><h6> Lulindo </h6> </a>
-              <p style="color: gray; margin-top: -2%"> 1 amigo em comum </p>
-              <div class="row" style="margin-top: -4%">
-                <button style=" width:65%; margin-left:5%"><img src="../img/addamigo.png" style="width:12%"> Adicionar aos amigos</button>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="row pt-2">
-            <div class="col-2 ml-3">
-              <img src="../img/ramos.jpg" style="border-radius:50%; width:160%">
-            </div>
-            <div class="col pl-4">
-              <a href="#" style="color:#3E6BA7;"><h6> Rodrigo Ramos </h6> </a>
-              <p style="color: gray; margin-top: -2%"> 3 amigos em comum </p>
-              <div class="row" style="margin-top: -4%">
-                <button style=" width:65%; margin-left:5%"><img src="../img/addamigo.png" style="width:12%"> Adicionar aos amigos</button>
-              </div>
-            </div>
+            <a href="#" style="color:#3E6BA7;"><h6> Adicione ao seu story </h6> </a>
+            <p style="margin-top:-2%; color: gray"> Compartilhe uma foto, vídeo ou escreva algo </p>
           </div>
         </div>
-      </div>
-
-      <div class="mt-3 card linguas" style="width:375px; padding:3%">
         <div class="row">
-          <div class="col-10">
-            <span style="color:gray"> Português(Brasil) </span> · <a href="#" style="color:#3E6BA7">Português(Portugal)</a> · <a href="#" style="color:#3E6BA7">English(US)</a> · <a href="#" style="color:#3E6BA7">Español</a> · <a href="#" style="color:#3E6BA7">Français(France)</a>
+          <div class="col-2">
+            <img src="../img/silvana.jpg" style="border-radius:50%; width:190%">
           </div>
-          <div class="col-1">
-            <button  class="btn pt-0 pb-0 pr-2 pl-2"> <span style="font-size:20px">+  </button>
-            </div>
+          <div class="col pl-4">
+            <a href="#" style="color:#3E6BA7;"><h6> Silsil Cheirosa </h6> </a>
+            <p style="margin-top:-2%; color: gray"> Há 2 minutos </p>
           </div>
         </div>
+        <div class="row pt-3">
+          <div class="col-2">
+            <img src="../img/carlos.jpg" style="border-radius:50%; width:180%">
+          </div>
+          <div class="col pl-4">
+            <a href="#" style="color:#3E6BA7;"><h6> Carlão Guimarães </h6> </a>
+            <p style="margin-top:-2%; color: gray"> Há 6 horas </p>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="col-2">
+            <img src="../img/aline.jpg" style="border-radius:50%; width:175%">
+          </div>
+          <div class="col pl-4">
+            <a href="#" style="color:#3E6BA7;"><h6> Aline Franceschini</h6> </a>
+            <p style="margin-top:-2%; color: gray"> Há 10 horas </p>
+          </div>
+        </div>
+        <div class="row pt-1 pl-3">
+          <a href="#"><i class="fas fa-sort-down" style="color: gray;"></i> <span class="ml-2" style="color:#3E6BA7 "> Ver mais</span>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <div class="col">
-    </div>
-    <div class="col">
-      <div class="row"> 
-        <div class="col">
-          <h6 style="font-size:9px"> JOGOS INSTANTÂNEOS </h6>
-        </div>
-        <div class="col">
-          <h6 style="font-size:10px"> Mais </h6>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="../img/uno.jpg" style="width:210%; border-radius:50%">
-        </div>
-        <div class="col">
-          <img src="../img/sinuca.jpg" style="width:210%; border-radius:50%">
-        </div>
-        <div class="col">
-          <img src="../img/candycrush.png" style="width:210%; border-radius:50%">
-        </div>
-      </div>
-      <hr class="linhadropdown">
-      <div class="row"> 
-        <div class="col">
-          <h6 style="font-size:9px"> SEUS JOGOS </h6>
-        </div>
-        <div class="col">
-          <h6 style="font-size:10px"> Mais </h6>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="../img/minecraft.jpg" style="width:210%; border-radius:50%">
-        </div>
-        <div class="col">
-          <img src="../img/barbie.png" style="width:210%; border-radius:50%">
-        </div>
-        <div class="col">
-          <img src="../img/code.jpg" style="width:210%; border-radius:50%">
-        </div>
-      </div>
-      <hr style="width:100%">
-      <div class="row">
-        <h6 style="color:gray; font-weight:bold; font-size:11px; margin-left:10%">CONTATOS</h6>
-      </div>
-      <div class="row" style="font-size:13px">
-        <img src="../img/carlos.jpg" style="border-radius:50%; width:20%; height:20%; margin-top: 5%; margin-bottom:5%;"> <span style="margin-top: 5%; margin-bottom:5%"> Carlão Guimarães</span><img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:4%">
-        <img src="../img/aline.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"> <span style="margin-top: 5%; margin-bottom:5%"> Aline Franceschini </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:3%">
-        <img src="../img/gabi.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"> <span style="margin-top: 5%; margin-bottom:5%"> Gabrielle Moro </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:13%">
-        <img src="../img/rebeca.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Rebeca Marcassa </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:5%">
-        <img src="../img/maysa.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Maysa Rinaldi </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:17%">
-        <img src="../img/dieguinho.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"> <span style="margin-top: 5%; margin-bottom:5%"> Diego Pagotto </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:13%">
-        <img src="../img/nicolas.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"> <span style="margin-top: 5%; margin-bottom:5%"> Nicolas Bianconi </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:7%">
-        <img src="../img/pedro2.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Pedro Piassi </span><img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:23%">
-        <img src="../img/bill.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"> <span style="margin-top: 5%; margin-bottom:5%"> Bill Gates </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:33%">
-        <img src="../img/hugo.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Hugo Mapeli </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:20%">
-        <img src="../img/steve.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Steve Jobs </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:30%">
-        <img src="../img/bruna.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Bruna Lomes </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:20%">
-        <img src="../img/beatriz.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Beatriz Lomes </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:17%">
-        <img src="../img/carla.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Carla Held </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:30%">
-              </div>
-              <div class="row">
-        <form class="form-inline">
-          <div class="input-group">
-            <div class="input-group-append">
-              <span class="input-group-text" id="searchicon"><i style="font-size:10px;" class="fas fa-search"></i></span>
-            </div>
-            <input style="font-size:12px" class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="searchicon">
+      <div class="mt-3 card evento" style="width: 375px;padding:3%">
+        <div class="row">
+          <div class="col-1">
+            <img src="../img/evento.png"> 
           </div>
-        </form>
+          <div class="col">
+            <button class="btn pr-5"> <span style="color:#3E6BA7; padding-right:3%"> Festão do pagode </span> 
+
+              <span style="color:gray"> em 3 de outubro </span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3 card" style="width:375px; padding:1%">
+          <div class="row">
+            <div class="col-9">
+              <h6 style="color:gray; font-weight:bold; font-family: Helvetica; padding:1.6%"> Pessoas que você talvez conheça</h6>
+            </div>
+            <div class="col">
+              <a href="#">Ver todos</a>
+            </div>
+          </div>
+          <div class="row pt-1">
+            <div class="col-2">
+              <img src="../img/malu.jpg" style="border-radius:50%; width:180%">
+            </div>
+            <div class="col pl-4">
+              <a href="#" style="color:#3E6BA7;"><h6> Malu </h6> </a>
+              <p style="color: gray; margin-top: -2%"> 10 amigos em comum </p>
+              <div class="row" style="margin-top: -4%">
+                <button style=" width:65%; margin-left:5%"><img src="../img/addamigo.png" style="width:12%"> Adicionar aos amigos</button>
+              </div>
+            </div>
+
+            <div class="row pt-2">
+              <div class="col-2 ml-3">
+                <img src="../img/fabiana.jpg" style="border-radius:50%; width:160%">
+              </div>
+              <div class="col pl-4">
+                <a href="#" style="color:#3E6BA7;"><h6> Fabiana Deusa </h6> </a>
+                <p style="color: gray; margin-top: -2%"> 15 amigos em comum </p>
+                <div class="row" style="margin-top: -4%">
+                  <button style=" width:65%; margin-left:5%"><img src="../img/addamigo.png" style="width:12%"> Adicionar aos amigos</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row pt-2">
+              <div class="col-2 ml-3">
+                <img src="../img/lula.jpg" style="border-radius:50%; width:160%">
+              </div>
+              <div class="col pl-4">
+                <a href="#" style="color:#3E6BA7;"><h6> Lulindo </h6> </a>
+                <p style="color: gray; margin-top: -2%"> 1 amigo em comum </p>
+                <div class="row" style="margin-top: -4%">
+                  <button style=" width:65%; margin-left:5%"><img src="../img/addamigo.png" style="width:12%"> Adicionar aos amigos</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row pt-2">
+              <div class="col-2 ml-3">
+                <img src="../img/ramos.jpg" style="border-radius:50%; width:160%">
+              </div>
+              <div class="col pl-4">
+                <a href="#" style="color:#3E6BA7;"><h6> Rodrigo Ramos </h6> </a>
+                <p style="color: gray; margin-top: -2%"> 3 amigos em comum </p>
+                <div class="row" style="margin-top: -4%">
+                  <button style=" width:65%; margin-left:5%"><img src="../img/addamigo.png" style="width:12%"> Adicionar aos amigos</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3 card linguas" style="width:375px; padding:3%">
+          <div class="row">
+            <div class="col-10">
+              <span style="color:gray"> Português(Brasil) </span> · <a href="#" style="color:#3E6BA7">Português(Portugal)</a> · <a href="#" style="color:#3E6BA7">English(US)</a> · <a href="#" style="color:#3E6BA7">Español</a> · <a href="#" style="color:#3E6BA7">Français(France)</a>
+            </div>
+            <div class="col-1">
+              <button  class="btn pt-0 pb-0 pr-2 pl-2"> <span style="font-size:20px">+  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+      </div>
+      <div class="col">
+        <div class="row"> 
+          <div class="col">
+            <h6 style="font-size:9px"> JOGOS INSTANTÂNEOS </h6>
+          </div>
+          <div class="col">
+            <h6 style="font-size:10px"> Mais </h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="../img/uno.jpg" style="width:210%; border-radius:50%">
+          </div>
+          <div class="col">
+            <img src="../img/sinuca.jpg" style="width:210%; border-radius:50%">
+          </div>
+          <div class="col">
+            <img src="../img/candycrush.png" style="width:210%; border-radius:50%">
+          </div>
+        </div>
+        <hr class="linhadropdown">
+        <div class="row"> 
+          <div class="col">
+            <h6 style="font-size:9px"> SEUS JOGOS </h6>
+          </div>
+          <div class="col">
+            <h6 style="font-size:10px"> Mais </h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="../img/minecraft.jpg" style="width:210%; border-radius:50%">
+          </div>
+          <div class="col">
+            <img src="../img/barbie.png" style="width:210%; border-radius:50%">
+          </div>
+          <div class="col">
+            <img src="../img/code.jpg" style="width:210%; border-radius:50%">
+          </div>
+        </div>
+        <hr style="width:100%">
+        <div class="row">
+          <h6 style="color:gray; font-weight:bold; font-size:11px; margin-left:10%">CONTATOS</h6>
+        </div>
+        <div class="row" style="font-size:13px">
+          <img src="../img/carlos.jpg" style="border-radius:50%; width:20%; height:20%; margin-top: 5%; margin-bottom:5%;"> <span style="margin-top: 5%; margin-bottom:5%"> Carlão Guimarães</span><img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:4%">
+          <img src="../img/aline.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"> <span style="margin-top: 5%; margin-bottom:5%"> Aline Franceschini </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:3%">
+          <img src="../img/gabi.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"> <span style="margin-top: 5%; margin-bottom:5%"> Gabrielle Moro </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:13%">
+          <img src="../img/rebeca.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Rebeca Marcassa </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:5%">
+          <img src="../img/maysa.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Maysa Rinaldi </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:17%">
+          <img src="../img/dieguinho.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"> <span style="margin-top: 5%; margin-bottom:5%"> Diego Pagotto </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:13%">
+          <img src="../img/nicolas.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"> <span style="margin-top: 5%; margin-bottom:5%"> Nicolas Bianconi </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:7%">
+          <img src="../img/pedro2.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Pedro Piassi </span><img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:23%">
+          <img src="../img/bill.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"> <span style="margin-top: 5%; margin-bottom:5%"> Bill Gates </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:33%">
+          <img src="../img/hugo.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Hugo Mapeli </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:20%">
+          <img src="../img/steve.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Steve Jobs </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:30%">
+          <img src="../img/bruna.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Bruna Lomes </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:20%">
+          <img src="../img/beatriz.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Beatriz Lomes </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:17%">
+          <img src="../img/carla.jpg" style="border-radius:50%; width:20%; height:20%;margin-top: 5%; margin-bottom:5%"><span style="margin-top: 5%; margin-bottom:5%"> Carla Held </span> <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:9%; margin-left:30%">
+        </div>
+        <div class="row">
+          <form class="form-inline">
+            <div class="input-group">
+              <div class="input-group-append">
+                <span class="input-group-text" id="searchicon"><i style="font-size:10px;" class="fas fa-search"></i></span>
+              </div>
+              <input style="font-size:12px" class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="searchicon">
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -626,23 +852,23 @@
 
 
 
- 
 
 
- <script src="assets/js/vendor/jquery-slim.min.js"></script>
- <script src="assets/js/vendor/popper.min.js"></script>
- <script src="dist/js/bootstrap.min.js"></script>
- <script src="assets/js/vendor/holder.min.js"></script>
- <script>
-  Holder.addTheme('thumb', {
-    bg: '#55595c',
-    fg: '#eceeef',
-    text: 'Thumbnail'
-  });
-  $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-</script>
-</body>
 
-</html>
+    <script src="assets/js/vendor/jquery-slim.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </body>
+
+  </html>

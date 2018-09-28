@@ -88,7 +88,15 @@
   font-weight: bold;
   margin-top:1%;
 }
-.principal span{
+.evento button:hover{
+  background-color: #E9EBEE;
+}
+.evento button{
+   background-color: white; 
+   padding:0;
+   width: 100%;
+}
+.publicar span{
   background-color: #F5F6F7;
   border-radius:40%;
 }
@@ -96,6 +104,23 @@
   font-family: sans-serif;
   font-weight: bold;
 }
+.linguas span{
+  padding-right: 2%;
+  padding-left: 2%;
+}
+.linguas a{
+  padding-right:2%;
+  padding-left:2%;
+}
+.linguas button{
+  background-color: white;
+  border-color: lightgray;
+}
+.linguas button:hover{
+    background-color: #E9EBEE;
+}
+
+
 </style>
 </head>
 <body>
@@ -238,8 +263,8 @@
   </div>
 
 </nav>
-  
-<div class="container-fluid row " style="background-color: #E9EBEE">
+
+<div class="container-fluid row" style="background-color: #E9EBEE">
   <div class="col-2">
   </div>
   <div class="col-1 esquerda">
@@ -262,7 +287,7 @@
     </div>
     <div class="row">
       <button class="btn"><img src="../img/eventos.png">Eventos</button>  
-       </div>
+    </div>
     <div class="row">
       <button class="btn"><img src="../img/paginas.png">Páginas</button>
     </div>
@@ -272,38 +297,245 @@
   </div>
   <div class="col-4 principal">
     <form>
-      <div class="card mt-3" >
+      <div class="card mt-3 publicar" >
         <div class="card-header">
           <img src="../img/lapis.png">
           <span style="font-weight: bold; color: gray">Criar Publicação</span>
-                    <span class="linha2"></span>
+          <span class="linha2"></span>
           <img src="../img/album.png">
           <span style="font-weight: bold; color: #3E6BA7">Álbum de fotos/vídeos</span>
-              <span class="linha2"></span>
+          <span class="linha2"></span>
           <img src="../img/videoaovivo.png">
           <span style="font-weight: bold; color: #3E6BA7">Vídeo ao vivo</span>
         </div>
 
         <div class="card-body">
-                  <img src="../img/eloperfil.jpg" style="border-radius:50%; width:10% ">
-          <input type="" name="algumacoisa" style=" height: 50px; width: 460px; border: none; " placeholder="No que você está pensando, Drª?">
+          <img src="../img/eloperfil.jpg" style="border-radius:50%; width:10% ">
+          <input type="" name="algumacoisa" style=" height: 50px; width: 460px; border: none;font-size: 17px; " placeholder="No que você está pensando, Drª?">
           <hr style="margin-top:2%">
           <span>
-          <img src="../img/fotocolorida.png">
-            Foto/vídeo</span>
+            <img src="../img/fotocolorida.png">
+          Foto/vídeo</span>
           <span>
-          <img src="../img/amigos.png" style="padding-left: 25px">
+            <img src="../img/amigos.png" style="padding-left: 25px">
           Marcar amigos</span>
           <span>
-          <img src="../img/feliz.png">
-          <span>Sentimento/atividade</span>
-          <span>...</span>
+            <img src="../img/feliz.png">
+            <span>Sentimento/atividade</span>
+            <span>...</span>
+          </div>
+        </form>
+      </div>
+
+      <div class="row container" style="width:105%">
+        <div class="card" style="margin-top:15px;">
+          <div class="row">
+            <div class="col-3">
+              <img src="../img/nicolas.jpg" style="border-radius:70%; width:50%; margin-left: 8%;margin-top: 8% ">
+            </div>
+            <div class="col-9" style="margin-left: -7%; margin-top: 2%">
+              <div class="row">
+                <a href="#" style="text-decoration: none"><span style="font-weight: bold">Nicolas Bianconi</span></a>
+              </div>
+              <div class="row">
+                <span style="font-size: 80%; color: gray">20 de setembro de 2018</span>
+                <img src="../img/amig.png" style="padding-left: 1%">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+           <img src="../img/nicolas2.jpg" style="width: 90%; margin-left: 5%; height: 90%; padding-top:2%; padding-bottom:2%">
+         </div>
+         <div class="row">
+          <div class="col-2">
+            <img src="../img/smile.png" style="margin-left: 25%; width: 60%; height: 70%;">
+          </div>
+          <div class="col-10" style="margin-left: -6%;">
+            <span style="font-size: 90%; color: gray">Você e Hugo Mapeli</span>
+          </div>
+          <hr>
+          <div class="row" style="margin-top: 1%; padding-top:2%">
+            <div class="col-2" style="margin-left: 20%">
+              <img src="../img/likeazul.png" style="margin-left: 100%; float: right">
+              <div class="row" style="margin-top: -1%; margin-left: 120%">
+                <a href="#" style="text-decoration:none; color: #3578E5; font-weight: bold; float: left;">Curtiu</a>
+              </div>
+            </div>
+            <div class="col-4">
+              <img src="../img/comentar.png" style="margin-left: 100%; float: right">
+              <div class="row" style="margin-top: -1%; margin-left: 120%">
+                <a href="#" style="text-decoration: none; color: gray; font-weight: bold; float: left">Comentar</a>
+              </div>
+
+            </div>
+            <div class="col-6" >
+              <div class="row" style="margin-left: 255%; margin-top: -17%">
+                <img src="../img/share.png">
+              </div>
+              <div class="row" style="margin-left: 280%;margin-top: -17%">
+                <a href="#" style="text-decoration: none; color: gray; font-weight: bold; float: left;">Compartilhar</a>
+              </div>
+            </div>
+          </div>
         </div>
-  </form>
-  <div class="row container">
-
+      </div>
+    </div>
+</div>
+<div class="col-3"">
+  <div class=" pt-3 container row">
+  <div class="card" style="width: 375px;padding:3%">
+    <div class="row">
+      <div class="col-3">
+  <a href="" style="color:#1d2129;; font-weight:bold; font-family: Helvetica;" data-toggle="tooltip" data-placement="bottom" title="Stories são fotos e vídeos que ficam visíveis por 24 horas.
+    Quando alguém adicionar a um story, ele aparecerá aqui.">
+    Stories
+  </a>
+</div>
+  <div class="col">
+    <img src="../img/itensarq.png">
+  <a style="color:#3E6BA7" href="#">Itens arquivados</a> ·
+  <a style="color:#3E6BA7" href="#">Configurações</a>
+</div>
   </div>
+  <div class="row pt-3">
+    <div class="col-2">
+      <img src="../img/story.png">
+    </div>
+    <div class="col pl-4">
+      <a href="#" style="color:#3E6BA7;"><h6> Adicione ao seu story </h6> </a>
+      <p style="margin-top:-2%; color: gray"> Compartilhe uma foto, vídeo ou escreva algo </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2">
+    <img src="../img/silvana.jpg" style="border-radius:50%; width:190%">
+</div>
+<div class="col pl-4">
+      <a href="#" style="color:#3E6BA7;"><h6> Silsil Cheirosa </h6> </a>
+      <p style="margin-top:-2%; color: gray"> Há 2 minutos </p>
+</div>
+</div>
+<div class="row pt-3">
+  <div class="col-2">
+    <img src="../img/carlos.jpg" style="border-radius:50%; width:180%">
+</div>
+<div class="col pl-4">
+      <a href="#" style="color:#3E6BA7;"><h6> Carlão Guimarães </h6> </a>
+      <p style="margin-top:-2%; color: gray"> Há 6 horas </p>
+</div>
+</div>
+<div class="row pt-3">
+  <div class="col-2">
+    <img src="../img/aline.jpg" style="border-radius:50%; width:175%">
+</div>
+<div class="col pl-4">
+      <a href="#" style="color:#3E6BA7;"><h6> Aline Franceschini</h6> </a>
+      <p style="margin-top:-2%; color: gray"> Há 10 horas </p>
+    </div>
+  </div>
+  <div class="row pt-1 pl-3">
+    <a href="#"><i class="fas fa-sort-down" style="color: gray;"></i> <span class="ml-2" style="color:#3E6BA7 "> Ver mais</span>
+</a>
+</div>
+</div>
 
+<div class="mt-3 card evento" style="width: 375px;padding:3%">
+  <div class="row">
+    <div class="col-1">
+  <img src="../img/evento.png"> 
+</div>
+  <div class="col">
+  <button class="btn pr-5"> <span style="color:#3E6BA7; padding-right:3%"> Festão do pagode </span> 
+
+  <span style="color:gray"> em 3 de outubro </span></button>
+</div>
+</div>
+</div>
+
+<div class="mt-3 card" style="width:375px; padding:1%">
+  <div class="row">
+    <div class="col-9">
+      <h6 style="color:gray; font-weight:bold; font-family: Helvetica; padding:1.6%"> Pessoas que você talvez conheça</h6>
+    </div>
+    <div class="col">
+      <a href="#">Ver todos</a>
+    </div>
+  </div>
+  <div class="row pt-1">
+  <div class="col-2">
+    <img src="../img/malu.jpg" style="border-radius:50%; width:180%">
+</div>
+<div class="col pl-4">
+      <a href="#" style="color:#3E6BA7;"><h6> Malu </h6> </a>
+      <p style="color: gray; margin-top: -2%"> 10 amigos em comum </p>
+      <div class="row" style="margin-top: -4%">
+      <button style=" width:65%; margin-left:5%"><img src="../img/addamigo.png" style="width:12%"> Adicionar aos amigos</button>
+    </div>
+</div>
+
+  <div class="row pt-2">
+  <div class="col-2 ml-3">
+    <img src="../img/fabiana.jpg" style="border-radius:50%; width:160%">
+</div>
+<div class="col pl-4">
+      <a href="#" style="color:#3E6BA7;"><h6> Fabiana Deusa </h6> </a>
+      <p style="color: gray; margin-top: -2%"> 15 amigos em comum </p>
+      <div class="row" style="margin-top: -4%">
+      <button style=" width:65%; margin-left:5%"><img src="../img/addamigo.png" style="width:12%"> Adicionar aos amigos</button>
+    </div>
+</div>
+</div>
+
+  <div class="row pt-2">
+  <div class="col-2 ml-3">
+    <img src="../img/lula.jpg" style="border-radius:50%; width:160%">
+</div>
+<div class="col pl-4">
+      <a href="#" style="color:#3E6BA7;"><h6> Lulindo </h6> </a>
+      <p style="color: gray; margin-top: -2%"> 1 amigo em comum </p>
+      <div class="row" style="margin-top: -4%">
+      <button style=" width:65%; margin-left:5%"><img src="../img/addamigo.png" style="width:12%"> Adicionar aos amigos</button>
+    </div>
+</div>
+</div>
+
+
+  <div class="row pt-2">
+  <div class="col-2 ml-3">
+    <img src="../img/ramos.jpg" style="border-radius:50%; width:160%">
+</div>
+<div class="col pl-4">
+      <a href="#" style="color:#3E6BA7;"><h6> Rodrigo Ramos </h6> </a>
+      <p style="color: gray; margin-top: -2%"> 3 amigos em comum </p>
+      <div class="row" style="margin-top: -4%">
+      <button style=" width:65%; margin-left:5%"><img src="../img/addamigo.png" style="width:12%"> Adicionar aos amigos</button>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mt-3 card linguas" style="width:375px; padding:3%">
+  <div class="row">
+    <div class="col-10">
+  <span style="color:gray"> Português(Brasil) </span> · <a href="#" style="color:#3E6BA7">Português(Portugal)</a> · <a href="#" style="color:#3E6BA7">English(US)</a> · <a href="#" style="color:#3E6BA7">Español</a> · <a href="#" style="color:#3E6BA7">Français(France)</a>
+</div>
+<div class="col-1">
+  <button  class="btn pt-0 pb-0 pr-2 pl-2"> <span style="font-size:20px">+  </button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+ 
 
 
  <script src="assets/js/vendor/jquery-slim.min.js"></script>
@@ -316,6 +548,9 @@
     fg: '#eceeef',
     text: 'Thumbnail'
   });
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 </script>
 </body>
 

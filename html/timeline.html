@@ -60,6 +60,7 @@
   .dropdown i{
     color: black;
   }
+
 .esquerda{
   font-family:Tahoma;
   font-size: 18px;
@@ -75,7 +76,8 @@
 .esquerda button{
  background-color:#E9EBEE;
  padding:0;
- margin-top:1%;
+ margin-top:2%;
+ margin-bottom:2%;
    font-family:Tahoma;
    font-size: 18px;
 }
@@ -267,19 +269,27 @@
 </nav>
 
 <div class="container-fluid row" style="background-color: #E9EBEE">
-  <div class="col-2">
+  <div class="col-1">
   </div>
-  <div class="col-1 esquerda">
+  <div class="col-2 esquerda">
     <div class="row">
-      <img style="border-radius:50%; width:15%; height:60%" src="../img/eloize.jpg"><span>Dra. Lolô Seno</span>
+      <button class="btn"><img style="border-radius:50%; width:20%; height:70%; margin-left:50%" src="../img/eloize.jpg"><span>Dra. Lolô Seno</span></button>
     </div>
     <div class="row">
-      <img src="../img/feedicon.png" style="width:10%; height:30%"><span>Feed de Notícias </span>
+      <button class="btn"><img src="../img/feedicon.png" style="width:20%;margin-left:90%; height:70%"><span>Feed de Notícias </span></button>
     </div>
     <div class="row">
-      <img style="width:10%; height: 30%;" src="../img/messengericon.png"><span>Messenger</span>
+      <button class="btn" style="margin-left:20%"><img style="width:12%;height: 60%;" src="../img/messengericon.png"><span>Messenger</span></button>
     </div>
+    <div style="margin-left:45%;">
     <h6> Atalhos </h6>
+    <div class="row">
+      <button class="btn"> <img src="../img/grupofofca.png">Fofocas do Ifsp</button>
+    </div>
+      <div class="row">
+    <a href="#"><i class="fas fa-sort-down" style="color: gray;"></i> <span class="ml-2" style="color:#3E6BA7 "> Ver mais</span>
+      </a>
+    </div>
     <h6> Explorar </h6>
     <div class="row">
       <button class="btn"> <img src="../img/salvos.png">Salvos</button>
@@ -296,7 +306,12 @@
     <div class="row">
       <button class="btn"><img src="../img/amigos.png">Lista de amigos</button>
     </div>
+    <div class="row">
+    <a href="#"><i class="fas fa-sort-down" style="color: gray;"></i> <span class="ml-2" style="color:#3E6BA7 "> Ver mais</span>
+      </a>
+    </div>
   </div>
+</div>
   <div class="col-4 principal">
     <form>
       <div class="card mt-3 publicar" >
@@ -329,7 +344,7 @@
         </form>
       </div>
 
-      <div class="row container" style="width:105%">
+      <div class="row container mb-5" style="width:105%">
         <div class="card" style="margin-top:15px;">
           <div class="row">
             <div class="col-3">
@@ -531,18 +546,67 @@
 </div>
 </div>
 
-  <div class="col-1">
-  </div>
   <div class="col">
+  </div>
+  <div class="col" style="border-left-width: 2px; border-left-color: gray">
       <div class="row"> 
         <div class="col">
-          <h6 style="font-size:11px"> JOGOS INSTANTÂNEOS </h6>
+          <h6 style="font-size:9px"> JOGOS INSTANTÂNEOS </h6>
         </div>
         <div class="col">
-          <h6 style="font-size:11px"> Mais </h6>
+          <h6 style="font-size:10px"> Mais </h6>
         </div>
       </div>
+      <div class="row">
+        <div class="col">
+          <img src="../img/uno.jpg" style="width:210%; border-radius:50%">
+        </div>
+        <div class="col">
+          <img src="../img/sinuca.jpg" style="width:210%; border-radius:50%">
+        </div>
+        <div class="col">
+          <img src="../img/candycrush.png" style="width:210%; border-radius:50%">
+        </div>
     </div>
+    <hr class="linhadropdown">
+          <div class="row"> 
+        <div class="col">
+          <h6 style="font-size:9px"> SEUS JOGOS </h6>
+        </div>
+        <div class="col">
+          <h6 style="font-size:10px"> Mais </h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="../img/minecraft.jpg" style="width:210%; border-radius:50%">
+        </div>
+        <div class="col">
+          <img src="../img/barbie.png" style="width:210%; border-radius:50%">
+        </div>
+        <div class="col">
+          <img src="../img/code.jpg" style="width:210%; border-radius:50%">
+        </div>
+    </div>
+    <hr style="width:100%">
+    <div class="row">
+      <h6 style="color:gray; font-weight:bold; font-size:11px; margin-left:10%">CONTATOS</h6>
+    </div>
+    <div class="row" style="font-size:13px">
+      <img src="../img/carlos.jpg" style="border-radius:50%; width:20%; height:20%;"> Carlão Guimarães <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:2%">
+    <img src="../img/aline.jpg" style="border-radius:50%; width:20%; height:20%"> Aline Franceschini <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:2%">
+    <img src="../img/hugo.jpg" style="border-radius:50%; width:20%; height:20%"> Hugo Mapeli <img src="../img/bolinhaverde.png" style="width:10%; height: 10%;margin-top:2%">
+
+
+
+        <form class="form-inline">
+          <div class="input-group">
+            <div class="input-group-append">
+              <span class="input-group-text" id="searchicon"><i class="fas fa-search"></i></span>
+            </div>
+            <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="searchicon">
+          </div>
+        </form>
 
   </div>
 
